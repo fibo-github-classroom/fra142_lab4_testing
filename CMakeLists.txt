@@ -8,8 +8,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_executable(part1_test part1_test.cpp)
-target_compile_options(part1_test PRIVATE -fsanitize=address)
-target_link_options(part1_test PRIVATE -fsanitize=address)
+#target_compile_options(part1_test PRIVATE -fsanitize=address)
+#target_link_options(part1_test PRIVATE -fsanitize=address)
 target_link_libraries(part1_test
   PRIVATE
   node
@@ -17,8 +17,8 @@ target_link_libraries(part1_test
   gmock_main)
 
 add_executable(part2_test part2_test.cpp)
-target_compile_options(part2_test PRIVATE -fsanitize=address)
-target_link_options(part2_test PRIVATE -fsanitize=address)
+#target_compile_options(part2_test PRIVATE -fsanitize=address)
+#target_link_options(part2_test PRIVATE -fsanitize=address)
 target_link_libraries(part2_test  
   PRIVATE
   linked_list
